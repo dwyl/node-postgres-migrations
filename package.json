@@ -1,0 +1,28 @@
+{
+  "name": "node-postgres-migrations",
+  "version": "1.0.0",
+  "description": "Running migrations on node postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrations": "node callMigrations",
+    "postinstall": "npm run migrations"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwyl/node-postgres-migrations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwyl/node-postgres-migrations/issues"
+  },
+  "homepage": "https://github.com/dwyl/node-postgres-migrations#readme",
+  "dependencies": {
+    "async": "^2.4.1",
+    "hapi-postgres-connection": "^6.1.0",
+    "hoek": "^4.1.1",
+    "pg": "^6.2.3"
+  }
+}
